@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>American River Solutions | Custom Software & Automation</title>
+  <title>American River Solutions | Web Apps, Training Portals & Quizzes</title>
+  <meta name="description" content="American River Solutions designs lightweight web apps, training portals, and quiz-driven learning experiences for growing teams." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            ars: {
-              midnight: '#0B1220',
-              ocean: '#114D7F',
-              aqua: '#1ED2FF',
-              slate: '#E2E8F0'
+            brand: {
+              ink: '#0F172A',
+              navy: '#1E3A8A',
+              sky: '#38BDF8',
+              mint: '#22D3EE',
+              peach: '#FB923C',
+              sand: '#FEF3C7',
+              cloud: '#E2E8F0',
+              snow: '#F8FAFC'
             }
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif']
           },
           boxShadow: {
-            glow: '0 20px 45px rgba(17,77,127,0.25)'
+            card: '0 24px 45px rgba(15, 23, 42, 0.10)',
+            glow: '0 45px 90px rgba(56, 189, 248, 0.20)'
           }
         }
       }
@@ -30,440 +36,383 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <meta name="description" content="American River Solutions builds custom software and automation platforms tailored to your business goals." />
 </head>
-<body class="bg-ars-midnight text-white font-sans antialiased">
-  <div class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-ars-midnight via-slate-900 to-black"></div>
-    <div class="absolute right-0 top-0 h-[600px] w-[600px] rounded-full bg-ars-ocean/30 blur-3xl"></div>
-    <div class="absolute left-[-200px] bottom-[-200px] h-[400px] w-[400px] rounded-full bg-ars-aqua/20 blur-3xl"></div>
+<body class="bg-brand-snow text-brand-ink font-sans antialiased">
+  <div class="relative min-h-screen">
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="absolute -top-40 right-[-200px] h-80 w-80 rounded-full bg-brand-sky/20 blur-3xl"></div>
+      <div class="absolute bottom-[-160px] left-[-160px] h-72 w-72 rounded-full bg-brand-mint/20 blur-3xl"></div>
+    </div>
 
-    <header class="relative">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <div class="flex items-center gap-3">
-          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-ars-aqua to-ars-ocean text-ars-midnight font-semibold tracking-wide">AR</div>
+    <header class="relative border-b border-brand-cloud/80 bg-white/90 backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+        <a href="#top" class="flex items-center gap-3">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-sky text-brand-ink text-lg font-semibold">AR</span>
           <div>
-            <p class="text-xl font-semibold">American River Solutions</p>
-            <p class="text-sm text-ars-slate/80">Custom Software & Automation</p>
+            <p class="text-lg font-semibold tracking-tight">American River Solutions</p>
+            <p class="text-sm text-brand-navy/70">Practical web tools for teams who teach and support</p>
           </div>
+        </a>
+        <div class="hidden items-center gap-8 text-sm font-medium text-brand-ink/70 md:flex">
+          <a href="#services" class="transition hover:text-brand-navy">Services</a>
+          <a href="#use-cases" class="transition hover:text-brand-navy">Use Cases</a>
+          <a href="#approach" class="transition hover:text-brand-navy">Approach</a>
+          <a href="#work" class="transition hover:text-brand-navy">Work</a>
+          <a href="#contact" class="transition hover:text-brand-navy">Contact</a>
         </div>
-        <div class="hidden items-center gap-8 text-sm font-medium text-ars-slate/80 md:flex">
-          <a href="#services" class="transition hover:text-white">Services</a>
-          <a href="#process" class="transition hover:text-white">Process</a>
-          <a href="#industries" class="transition hover:text-white">Industries</a>
-          <div class="relative group">
-            <a href="https://americanriversolutions.com/us-citizenship-test" class="flex items-center gap-2 transition hover:text-white focus-visible:text-white" aria-haspopup="true">
-              <span>Our Work</span>
-              <svg class="h-2.5 w-2.5 text-ars-slate/60 transition group-hover:-rotate-180 group-focus-within:-rotate-180" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-            <div class="invisible absolute left-1/2 top-full z-20 mt-3 w-56 -translate-x-1/2 translate-y-2 rounded-2xl border border-white/10 bg-ars-midnight/90 p-3 text-sm text-ars-slate/80 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-              <a href="https://americanriversolutions.com/us-citizenship-test" class="block rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:text-white">U.S. Citizenship Test</a>
-              <!-- Add additional case studies here as they are published -->
-            </div>
-          </div>
-          <a href="#insights" class="transition hover:text-white">Insights</a>
-        </div>
-        <a href="#contact" class="hidden rounded-full border border-white/20 px-5 py-2 text-sm font-medium text-white transition hover:border-ars-aqua hover:text-ars-aqua md:block">Book a Strategy Call</a>
-        <button type="button" class="inline-flex items-center justify-center rounded-full border border-white/15 p-2 text-ars-slate/80 transition hover:border-ars-aqua hover:text-ars-aqua focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ars-aqua md:hidden" aria-expanded="false" aria-controls="mobile-nav" data-mobile-toggle>
+        <a href="#contact" class="hidden rounded-full bg-brand-navy px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-brand-sky md:block">Book a Call</a>
+        <button type="button" class="inline-flex items-center justify-center rounded-full border border-brand-cloud/80 p-2 text-brand-ink md:hidden" aria-expanded="false" aria-controls="mobile-nav" data-mobile-toggle>
           <span class="sr-only">Toggle navigation</span>
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
       </nav>
-      <div id="mobile-nav" class="mx-auto mt-2 hidden max-w-6xl px-6 md:hidden">
-        <div class="space-y-2 rounded-2xl border border-white/10 bg-white/5 p-6 text-sm font-medium text-ars-slate/80 shadow-lg">
-          <a href="#services" class="block rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-white">Services</a>
-          <a href="#process" class="block rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-white">Process</a>
-          <a href="#industries" class="block rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-white">Industries</a>
-          <div class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-white" data-mobile-dropdown>
-            <button type="button" class="flex w-full items-center justify-between gap-3 text-left text-ars-slate/80 transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ars-aqua" data-mobile-subtoggle aria-expanded="false" aria-controls="mobile-our-work-submenu">
-              <span>Our Work</span>
-              <svg class="h-4 w-4 text-ars-slate/60 transition-transform" viewBox="0 0 10 6" fill="none" data-mobile-subicon aria-hidden="true">
-                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-            <div id="mobile-our-work-submenu" class="mt-2 hidden space-y-2 pl-2" data-mobile-submenu>
-              <a href="https://americanriversolutions.com/us-citizenship-test" class="block rounded-lg px-3 py-2 text-ars-slate/70 transition hover:bg-white/10 hover:text-white">U.S. Citizenship Test</a>
-              <!-- Add additional case studies here as they are published -->
-            </div>
-          </div>
-          <a href="#insights" class="block rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-white">Insights</a>
-          <a href="#contact" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-ars-aqua px-5 py-2 text-sm font-semibold text-ars-midnight transition hover:-translate-y-0.5 hover:shadow-lg">Book a Strategy Call</a>
+      <div id="mobile-nav" class="mx-auto hidden max-w-6xl px-6 md:hidden">
+        <div class="space-y-2 rounded-2xl border border-brand-cloud bg-white/95 p-6 text-sm font-medium text-brand-ink/80 shadow-card">
+          <a href="#services" class="block rounded-lg px-3 py-2 transition hover:bg-brand-sky/10 hover:text-brand-navy">Services</a>
+          <a href="#use-cases" class="block rounded-lg px-3 py-2 transition hover:bg-brand-sky/10 hover:text-brand-navy">Use Cases</a>
+          <a href="#approach" class="block rounded-lg px-3 py-2 transition hover:bg-brand-sky/10 hover:text-brand-navy">Approach</a>
+          <a href="#work" class="block rounded-lg px-3 py-2 transition hover:bg-brand-sky/10 hover:text-brand-navy">Work</a>
+          <a href="#contact" class="block rounded-lg px-3 py-2 transition hover:bg-brand-sky/10 hover:text-brand-navy">Contact</a>
         </div>
       </div>
     </header>
 
-    <main class="relative">
-      <section class="mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-10 text-left lg:flex-row lg:items-center lg:pt-20">
-        <div class="flex-1 space-y-8">
-          <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-ars-slate/80">Custom Software & Automation</span>
-          <h1 class="text-4xl font-semibold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-            Engineering intelligent systems that move your business forward.
-          </h1>
-          <p class="max-w-xl text-lg text-ars-slate/80">
-            American River Solutions partners with growth-minded organizations to design and deliver modern platforms, operational automations, and data-driven tools that scale with your ambitions.
+    <main id="top" class="relative">
+      <section class="mx-auto max-w-6xl gap-12 px-6 pb-20 pt-16 md:grid md:grid-cols-[1.1fr,1fr] md:pt-24">
+        <div class="flex flex-col gap-6">
+          <span class="inline-flex items-center rounded-full bg-brand-sand px-4 py-2 text-sm font-medium text-brand-navy">Lean studio • Big results</span>
+          <h1 class="text-4xl font-bold tracking-tight text-brand-ink sm:text-5xl">We design straightforward web apps, training portals, and quiz experiences that keep teams moving.</h1>
+          <p class="text-lg text-brand-ink/75">
+            From compliance refreshers to customer onboarding, we build the digital tools that help people learn, align, and act. No red tape—just focused collaboration with the builders on the call.
           </p>
-          <div class="flex flex-col gap-4 sm:flex-row">
-            <a href="#contact" class="group inline-flex items-center justify-center rounded-full bg-ars-aqua px-6 py-3 text-sm font-semibold text-ars-midnight shadow-glow transition hover:-translate-y-0.5 hover:shadow-2xl">
-              Start a Project
-              <span class="ml-2 text-base transition group-hover:translate-x-1">→</span>
-            </a>
-            <a href="#insights" class="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-ars-aqua/70 hover:text-ars-aqua">View Capabilities</a>
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-brand-navy px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-brand-sky">Start your project chat</a>
+            <a href="#work" class="inline-flex items-center justify-center rounded-full border border-brand-cloud px-6 py-3 text-sm font-semibold text-brand-navy transition hover:border-brand-navy hover:text-brand-navy">See recent launches</a>
           </div>
-          <div class="grid gap-6 sm:grid-cols-3">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p class="text-3xl font-semibold text-white">85<span class="text-ars-aqua">%</span></p>
-              <p class="mt-2 text-xs uppercase text-ars-slate/70">Processes Automated</p>
-            </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p class="text-3xl font-semibold text-white">10x</p>
-              <p class="mt-2 text-xs uppercase text-ars-slate/70">Faster Deployment</p>
-            </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p class="text-3xl font-semibold text-white">99.9<span class="text-ars-aqua">%</span></p>
-              <p class="mt-2 text-xs uppercase text-ars-slate/70">Platform Uptime</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex-1">
-          <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-ars-ocean/40 via-ars-ocean/20 to-ars-aqua/10 p-8 shadow-xl backdrop-blur-md">
-            <div class="absolute right-8 top-6 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-white/80">Case Snapshot</div>
-            <h2 class="text-lg font-semibold text-white">Intelligent logistics automation</h2>
-            <p class="mt-4 text-sm text-ars-slate/70">
-              We partnered with a regional manufacturer to integrate IoT telemetry, predictive maintenance, and automated dispatch workflows—reducing downtime by 32% within the first quarter.
-            </p>
-            <dl class="mt-6 grid grid-cols-2 gap-4 text-sm">
-              <div class="rounded-xl border border-white/10 bg-white/5 p-4">
-                <dt class="text-ars-slate/70">Tech Stack</dt>
-                <dd class="mt-1 font-medium text-white">Azure, Node.js, React, Power Platform</dd>
-              </div>
-              <div class="rounded-xl border border-white/10 bg-white/5 p-4">
-                <dt class="text-ars-slate/70">Outcome</dt>
-                <dd class="mt-1 font-medium text-white">+18% throughput</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="relative bg-white/5 py-20">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <dl class="grid gap-6 text-sm text-brand-ink/80 sm:grid-cols-3">
             <div>
-              <h2 class="text-3xl font-semibold text-white">Solutions engineered for your next chapter</h2>
-              <p class="mt-2 max-w-xl text-ars-slate/80">
-                From greenfield platforms to mission-critical modernizations, our cross-functional teams align technology, strategy, and delivery to accelerate outcomes.
-              </p>
+              <dt class="font-semibold text-brand-navy">Training-first mindset</dt>
+              <dd>Scenario-based lessons, quizzes, and dashboards sized for real schedules.</dd>
             </div>
-            <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-ars-aqua/60 px-6 py-3 text-sm font-semibold text-ars-aqua transition hover:bg-ars-aqua hover:text-ars-midnight">Let's Talk</a>
-          </div>
-          <div class="mt-12 grid gap-8 md:grid-cols-2">
-            <div class="rounded-3xl border border-white/10 bg-ars-midnight/60 p-8 shadow-lg">
-              <div class="flex items-center gap-3">
-                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-ars-aqua to-ars-ocean text-ars-midnight font-semibold">01</div>
-                <h3 class="text-xl font-semibold text-white">Custom Software Platforms</h3>
-              </div>
-              <p class="mt-4 text-ars-slate/70">Cloud-native applications, data-rich dashboards, and mobile experiences built to last.</p>
-              <ul class="mt-6 space-y-2 text-sm text-ars-slate/60">
-                <li>• Enterprise application development</li>
-                <li>• Product design & UX research</li>
-                <li>• API-first integrations</li>
-              </ul>
-            </div>
-            <div class="rounded-3xl border border-white/10 bg-ars-midnight/60 p-8 shadow-lg">
-              <div class="flex items-center gap-3">
-                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-ars-aqua to-ars-ocean text-ars-midnight font-semibold">02</div>
-                <h3 class="text-xl font-semibold text-white">Automation & AI</h3>
-              </div>
-              <p class="mt-4 text-ars-slate/70">We connect systems, orchestrate workflows, and leverage AI to remove bottlenecks.</p>
-              <ul class="mt-6 space-y-2 text-sm text-ars-slate/60">
-                <li>• Enterprise automation programs</li>
-                <li>• Machine learning & predictive analytics</li>
-                <li>• RPA and low-code solutions</li>
-              </ul>
-            </div>
-            <div class="rounded-3xl border border-white/10 bg-ars-midnight/60 p-8 shadow-lg">
-              <div class="flex items-center gap-3">
-                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-ars-aqua to-ars-ocean text-ars-midnight font-semibold">03</div>
-                <h3 class="text-xl font-semibold text-white">Modernization & Cloud</h3>
-              </div>
-              <p class="mt-4 text-ars-slate/70">Reimagining legacy stacks with resilient architectures, automation, and observability.</p>
-              <ul class="mt-6 space-y-2 text-sm text-ars-slate/60">
-                <li>• Infrastructure & DevOps automation</li>
-                <li>• Legacy system migrations</li>
-                <li>• Data platform engineering</li>
-              </ul>
-            </div>
-            <div class="rounded-3xl border border-white/10 bg-ars-midnight/60 p-8 shadow-lg">
-              <div class="flex items-center gap-3">
-                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-ars-aqua to-ars-ocean text-ars-midnight font-semibold">04</div>
-                <h3 class="text-xl font-semibold text-white">Strategic Advisory</h3>
-              </div>
-              <p class="mt-4 text-ars-slate/70">We guide leaders through digital strategy, operating models, and change management.</p>
-              <ul class="mt-6 space-y-2 text-sm text-ars-slate/60">
-                <li>• Digital transformation roadmaps</li>
-                <li>• Product & portfolio strategy</li>
-                <li>• Center of excellence enablement</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="process" class="relative py-20">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="lg:max-w-2xl">
-            <h2 class="text-3xl font-semibold text-white">A delivery model engineered for velocity and certainty</h2>
-            <p class="mt-4 text-ars-slate/80">
-              Transparent collaboration, lean experimentation, and rigorous engineering ensure that your investment translates into measurable business value.
-            </p>
-          </div>
-          <div class="mt-12 grid gap-8 lg:grid-cols-3">
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
-              <div class="text-sm font-semibold uppercase tracking-[0.3em] text-ars-aqua">01 • Discover</div>
-              <h3 class="mt-4 text-xl font-semibold text-white">Strategy & Alignment</h3>
-              <p class="mt-3 text-ars-slate/70">Immersive workshops to define vision, KPIs, and technical architectures aligned to your roadmap.</p>
-            </div>
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
-              <div class="text-sm font-semibold uppercase tracking-[0.3em] text-ars-aqua">02 • Build</div>
-              <h3 class="mt-4 text-xl font-semibold text-white">Design, Deliver, Iterate</h3>
-              <p class="mt-3 text-ars-slate/70">Cross-functional squads ship high-impact increments every sprint, informed by continuous feedback.</p>
-            </div>
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
-              <div class="text-sm font-semibold uppercase tracking-[0.3em] text-ars-aqua">03 • Scale</div>
-              <h3 class="mt-4 text-xl font-semibold text-white">Operate & Optimize</h3>
-              <p class="mt-3 text-ars-slate/70">Enable your teams with automation, analytics, and support programs that sustain long-term performance.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="industries" class="relative bg-white/5 py-20">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 class="text-3xl font-semibold text-white">Trusted by operators in complex industries</h2>
-              <p class="mt-4 text-ars-slate/80">We collaborate with leaders across regulated, asset-intensive, and high-growth sectors.</p>
-              <div class="mt-8 grid gap-6 sm:grid-cols-2">
-                <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-ars-slate/70">
-                  <h3 class="text-lg font-semibold text-white">Manufacturing</h3>
-                  Smart plants, connected supply chains, predictive maintenance.
-                </div>
-                <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-ars-slate/70">
-                  <h3 class="text-lg font-semibold text-white">Utilities & Energy</h3>
-                  Grid modernization, field workforce automation, compliance tooling.
-                </div>
-                <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-ars-slate/70">
-                  <h3 class="text-lg font-semibold text-white">Financial Services</h3>
-                  Digital onboarding, risk modeling, regulatory reporting.
-                </div>
-                <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-ars-slate/70">
-                  <h3 class="text-lg font-semibold text-white">Logistics</h3>
-                  Realtime visibility, predictive routing, automation of ops hubs.
-                </div>
-              </div>
+              <dt class="font-semibold text-brand-navy">Small-team ready</dt>
+              <dd>We operate as an embedded partner, so stakeholders see progress weekly.</dd>
             </div>
-            <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-ars-ocean/40 via-ars-midnight to-black p-10 shadow-2xl">
-              <div class="absolute inset-0 bg-gradient-to-br from-ars-aqua/10 to-transparent opacity-60"></div>
-              <blockquote class="relative text-ars-slate/80">
-                <div class="text-sm uppercase tracking-[0.3em] text-ars-aqua">Client Perspective</div>
-                <p class="mt-6 text-xl text-white">
-                  “American River Solutions transformed our operations through intelligent automation and a real-time analytics platform. We scaled to new markets without growing headcount.”
-                </p>
-                <footer class="mt-6">
-                  <p class="text-white font-semibold">COO, National Logistics Network</p>
-                  <p class="text-ars-slate/60 text-sm">12-month engagement • 7 systems integrated</p>
-                </footer>
-              </blockquote>
+            <div>
+              <dt class="font-semibold text-brand-navy">Launch & iterate</dt>
+              <dd>Hosting, automation, and support plans that evolve with your content.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="mt-12 md:mt-0">
+          <div class="relative grid gap-6">
+            <div class="relative overflow-hidden rounded-3xl border border-white/60 bg-white shadow-glow">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1100&q=80" alt="Team reviewing a training dashboard" class="h-72 w-full object-cover" />
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-brand-cloud bg-white/90 p-5 shadow-card">
+                <p class="text-xs font-semibold uppercase tracking-wide text-brand-navy">Recent highlight</p>
+                <h2 class="mt-2 text-base font-semibold text-brand-ink">Hybrid onboarding academy</h2>
+                <p class="mt-2 text-sm text-brand-ink/70">Modular lessons + quizzes for a distributed support team. Time-to-first-ticket dropped 40% in the first quarter.</p>
+              </div>
+              <div class="relative overflow-hidden rounded-3xl border border-white/50 bg-white shadow-card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Employee completing a quiz on a tablet" class="h-44 w-full object-cover" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="insights" class="relative py-20">
+      <section id="services" class="border-t border-brand-cloud/70 bg-white py-16">
         <div class="mx-auto max-w-6xl px-6">
-          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-            <div>
-              <h2 class="text-3xl font-semibold text-white">Insights to unlock the next advantage</h2>
-              <p class="mt-4 text-ars-slate/80">Access frameworks and playbooks that help your teams drive momentum.</p>
+          <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-2xl space-y-3">
+              <h2 class="text-3xl font-semibold text-brand-ink sm:text-4xl">Services that keep knowledge flowing</h2>
+              <p class="text-base text-brand-ink/70">We scope, design, ship, and support focused products that help your people learn faster and work smarter.</p>
             </div>
-            <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-ars-aqua/70 hover:text-ars-aqua">Download Portfolio</a>
+            <a href="#contact" class="inline-flex items-center rounded-full border border-brand-cloud px-5 py-2 text-sm font-semibold text-brand-navy transition hover:border-brand-navy hover:text-brand-navy">Plan a roadmap call</a>
           </div>
-          <div class="mt-12 grid gap-8 md:grid-cols-3">
-            <article class="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-ars-aqua/50 hover:-translate-y-1">
-              <div class="text-xs uppercase tracking-[0.3em] text-ars-aqua">Automation</div>
-              <h3 class="mt-4 text-lg font-semibold text-white">Blueprint: Scaling enterprise automation programs</h3>
-              <p class="mt-3 text-sm text-ars-slate/70">A step-by-step path to align governance, technology, and delivery for automation success.</p>
-              <span class="mt-6 inline-flex items-center text-sm font-semibold text-ars-aqua">Read Insight →</span>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <article class="flex h-full flex-col rounded-3xl border border-brand-cloud bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
+              <span class="text-xs font-semibold uppercase tracking-wide text-brand-navy">Web apps</span>
+              <h3 class="mt-3 text-xl font-semibold text-brand-ink">Resource & workflow portals</h3>
+              <p class="mt-3 text-sm text-brand-ink/70">Internal tools, content hubs, and approval workflows that replace spreadsheets and email loops.</p>
+              <ul class="mt-4 space-y-2 text-sm text-brand-ink/70">
+                <li>• Role-based access & dashboards</li>
+                <li>• Content publishing & versioning</li>
+                <li>• Integrations with Teams, Slack, and email</li>
+              </ul>
             </article>
-            <article class="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-ars-aqua/50 hover:-translate-y-1">
-              <div class="text-xs uppercase tracking-[0.3em] text-ars-aqua">Modernization</div>
-              <h3 class="mt-4 text-lg font-semibold text-white">Playbook: De-risking legacy platform migrations</h3>
-              <p class="mt-3 text-sm text-ars-slate/70">How to accelerate outcomes with event-driven architectures and DevOps automation.</p>
-              <span class="mt-6 inline-flex items-center text-sm font-semibold text-ars-aqua">Read Insight →</span>
+            <article class="flex h-full flex-col rounded-3xl border border-brand-cloud bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
+              <span class="text-xs font-semibold uppercase tracking-wide text-brand-navy">Training</span>
+              <h3 class="mt-3 text-xl font-semibold text-brand-ink">Learning journeys & quizzes</h3>
+              <p class="mt-3 text-sm text-brand-ink/70">Scenario-driven lessons, certification quizzes, and reporting dashboards sized for busy teams.</p>
+              <ul class="mt-4 space-y-2 text-sm text-brand-ink/70">
+                <li>• Microlearning modules & drip schedules</li>
+                <li>• Auto-scored quizzes with remediation</li>
+                <li>• Completion reports & analytics</li>
+              </ul>
             </article>
-            <article class="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-ars-aqua/50 hover:-translate-y-1">
-              <div class="text-xs uppercase tracking-[0.3em] text-ars-aqua">AI & Data</div>
-              <h3 class="mt-4 text-lg font-semibold text-white">Guide: Building intelligent operations</h3>
-              <p class="mt-3 text-sm text-ars-slate/70">Meld AI, analytics, and automation to orchestrate smarter decisions across the enterprise.</p>
-              <span class="mt-6 inline-flex items-center text-sm font-semibold text-ars-aqua">Read Insight →</span>
+            <article class="flex h-full flex-col rounded-3xl border border-brand-cloud bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
+              <span class="text-xs font-semibold uppercase tracking-wide text-brand-navy">Automation</span>
+              <h3 class="mt-3 text-xl font-semibold text-brand-ink">Enablement & support systems</h3>
+              <p class="mt-3 text-sm text-brand-ink/70">Connect the apps you already use with lightweight scripts, integrations, and maintenance plans.</p>
+              <ul class="mt-4 space-y-2 text-sm text-brand-ink/70">
+                <li>• Workflow automation & notifications</li>
+                <li>• Data syncs with Airtable, Supabase, Power Platform</li>
+                <li>• Ongoing iteration retainers</li>
+              </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="relative overflow-hidden py-20">
-        <div class="absolute inset-0 bg-gradient-to-br from-ars-ocean/40 via-ars-ocean/20 to-ars-aqua/20 blur-3xl opacity-50"></div>
-        <div class="relative mx-auto max-w-4xl rounded-3xl border border-white/10 bg-ars-midnight/80 p-10 shadow-2xl backdrop-blur">
-          <div class="text-sm uppercase tracking-[0.3em] text-ars-aqua">Let's Collaborate</div>
-          <h2 class="mt-4 text-3xl font-semibold text-white">Ready to engineer your next competitive advantage?</h2>
-          <p class="mt-4 text-ars-slate/70">Share a few details about your initiatives and our team will schedule a strategy call within one business day.</p>
-          <form class="mt-8 grid gap-6 md:grid-cols-2">
-            <div class="flex flex-col">
-              <label for="name" class="text-sm font-semibold text-ars-slate/80">Name</label>
-              <input id="name" type="text" placeholder="Alex Smith" class="mt-2 rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-ars-slate/50 focus:border-ars-aqua focus:outline-none" />
+      <section id="use-cases" class="bg-gradient-to-br from-white via-brand-snow to-white py-16">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="max-w-2xl">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-brand-navy/80">Use cases we deliver</p>
+            <h2 class="mt-3 text-3xl font-semibold text-brand-ink sm:text-4xl">SEO-friendly training and enablement solutions</h2>
+            <p class="mt-3 text-base text-brand-ink/70">Each project is tailored, yet we see consistent themes across compliance, customer education, and partner enablement.</p>
+          </div>
+          <div class="mt-10 grid gap-6 lg:grid-cols-[1.1fr,0.9fr]">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <article class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-lg font-semibold text-brand-ink">Compliance training portals</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Launch role-specific pathways, policy attestations, and certificate tracking for regulated teams.</p>
+              </article>
+              <article class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-lg font-semibold text-brand-ink">Customer onboarding academies</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Give new customers step-by-step video lessons, guided checklists, and quiz checkpoints that boost retention.</p>
+              </article>
+              <article class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-lg font-semibold text-brand-ink">Product knowledge microsites</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Equip sales and support reps with bite-sized updates, launch playbooks, and searchable resource hubs.</p>
+              </article>
+              <article class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-lg font-semibold text-brand-ink">Certification quizzes for field teams</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Deliver mobile-ready assessments, instant scoring, and supervisor reports for on-the-go workforce training.</p>
+              </article>
+              <article class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-lg font-semibold text-brand-ink">Partner enablement playbooks</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Centralize co-brandable assets, walkthroughs, and request forms so partners can self-serve and sell faster.</p>
+              </article>
+              <article class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-lg font-semibold text-brand-ink">Event & workshop hubs</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Prep attendees with pre-work, polls, and recap quizzes while automating attendance and feedback.</p>
+              </article>
             </div>
-            <div class="flex flex-col">
-              <label for="company" class="text-sm font-semibold text-ars-slate/80">Company</label>
-              <input id="company" type="text" placeholder="Your organization" class="mt-2 rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-ars-slate/50 focus:border-ars-aqua focus:outline-none" />
+            <figure class="relative overflow-hidden rounded-3xl border border-brand-cloud/70 bg-white shadow-glow">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Facilitator leading a hybrid training session" class="h-full w-full object-cover" />
+              <figcaption class="absolute bottom-4 left-4 rounded-full bg-white/85 px-4 py-2 text-xs font-medium text-brand-navy">Purpose-built experiences, not generic LMS installs</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="border-t border-brand-cloud/70 bg-white py-16">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-col gap-10 lg:flex-row lg:items-start">
+            <div class="max-w-xl space-y-4">
+              <h2 class="text-3xl font-semibold text-brand-ink sm:text-4xl">Our process keeps momentum steady</h2>
+              <p class="text-base text-brand-ink/70">We stay close to the work—no handoffs to junior teams. Weekly walkthroughs make sure every sprint delivers something you can try.</p>
+              <div class="rounded-3xl border border-brand-cloud bg-brand-snow p-6 shadow-card">
+                <h3 class="text-lg font-semibold text-brand-ink">Why teams stick with us</h3>
+                <ul class="mt-4 space-y-2 text-sm text-brand-ink/70">
+                  <li>• Direct access to the builders doing the work</li>
+                  <li>• Honest timelines and transparent scope control</li>
+                  <li>• Documentation and handoff that supports future updates</li>
+                </ul>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <label for="email" class="text-sm font-semibold text-ars-slate/80">Email</label>
-              <input id="email" type="email" placeholder="you@email.com" class="mt-2 rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-ars-slate/50 focus:border-ars-aqua focus:outline-none" />
+            <ol class="flex-1 space-y-6">
+              <li class="rounded-3xl border border-brand-cloud bg-brand-snow p-6 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">01 · Discover</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Clarify audiences, success metrics, and existing assets. Align on must-haves vs. nice-to-haves in the first week.</p>
+              </li>
+              <li class="rounded-3xl border border-brand-cloud bg-brand-snow p-6 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">02 · Shape</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Design prototypes, map content structure, and confirm integrations so we ship the right things first.</p>
+              </li>
+              <li class="rounded-3xl border border-brand-cloud bg-brand-snow p-6 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">03 · Build</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Develop features, migrate data, and QA with your pilot group. Weekly Loom updates show real progress.</p>
+              </li>
+              <li class="rounded-3xl border border-brand-cloud bg-brand-snow p-6 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">04 · Launch & support</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Deploy to production, train admins, and set up optional support plans to keep content fresh.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="border-y border-brand-cloud/70 bg-brand-snow py-16">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+            <div class="max-w-xl">
+              <h2 class="text-3xl font-semibold text-brand-ink sm:text-4xl">Recent collaborations</h2>
+              <p class="mt-3 text-base text-brand-ink/70">Every engagement is built with subject matter experts, operations leaders, and the folks who will live in the tool day-to-day.</p>
             </div>
-            <div class="flex flex-col">
-              <label for="timeline" class="text-sm font-semibold text-ars-slate/80">Timeline</label>
-              <select id="timeline" class="mt-2 rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white focus:border-ars-aqua focus:outline-none">
-                <option class="bg-ars-midnight">ASAP</option>
-                <option class="bg-ars-midnight">0-3 months</option>
-                <option class="bg-ars-midnight">3-6 months</option>
-                <option class="bg-ars-midnight">6+ months</option>
-              </select>
+            <a href="https://americanriversolutions.com/us-citizenship-test" class="inline-flex items-center rounded-full border border-brand-cloud px-5 py-2 text-sm font-semibold text-brand-navy transition hover:border-brand-navy hover:text-brand-navy" target="_blank" rel="noopener">View a public training app</a>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-cloud bg-white shadow-card">
+              <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80" alt="Operators viewing a safety dashboard" class="h-48 w-full object-cover" />
+              <div class="flex flex-1 flex-col p-6">
+                <div class="flex items-center gap-3 text-xs text-brand-ink/60">
+                  <span class="rounded-full bg-brand-sky/15 px-3 py-1 font-semibold uppercase tracking-wide text-brand-navy">Training</span>
+                  <span>2025</span>
+                </div>
+                <h3 class="mt-4 text-xl font-semibold text-brand-ink">Factory safety recertification portal</h3>
+                <p class="mt-3 flex-1 text-sm text-brand-ink/70">Lesson videos, chapter quizzes, and readiness dashboards for a 300-person operations team. Compliance reporting now runs automatically.</p>
+                <ul class="mt-4 space-y-2 text-sm text-brand-ink/70">
+                  <li>• LMS-lite experience with personalized reminders</li>
+                  <li>• CSV uploads to sync roster changes</li>
+                  <li>• Email digests for supervisors</li>
+                </ul>
+              </div>
+            </article>
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-cloud bg-white shadow-card">
+              <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80" alt="Team planning a resource schedule" class="h-48 w-full object-cover" />
+              <div class="flex flex-1 flex-col p-6">
+                <div class="flex items-center gap-3 text-xs text-brand-ink/60">
+                  <span class="rounded-full bg-brand-mint/15 px-3 py-1 font-semibold uppercase tracking-wide text-brand-navy">Operations</span>
+                  <span>2024</span>
+                </div>
+                <h3 class="mt-4 text-xl font-semibold text-brand-ink">Resource scheduling assistant</h3>
+                <p class="mt-3 flex-1 text-sm text-brand-ink/70">Connected spreadsheets, approvals, and notifications into one simple portal so teams book instructors, rooms, and equipment without back-and-forth emails.</p>
+                <ul class="mt-4 space-y-2 text-sm text-brand-ink/70">
+                  <li>• Role-based access with audit trail</li>
+                  <li>• Integrations with Teams & Slack</li>
+                  <li>• Utilization insights dashboard</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="toolkit" class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="grid gap-10 lg:grid-cols-[1fr,1.1fr] lg:items-center">
+            <div class="max-w-xl space-y-3">
+              <h2 class="text-3xl font-semibold text-brand-ink sm:text-4xl">Tools we reach for</h2>
+              <p class="text-base text-brand-ink/70">We pair modern frameworks with reliable services so your team can own and extend what we ship.</p>
             </div>
-            <div class="md:col-span-2 flex flex-col">
-              <label for="project" class="text-sm font-semibold text-ars-slate/80">Project Goals</label>
-              <textarea id="project" rows="4" placeholder="Tell us about the outcomes you're targeting." class="mt-2 rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-ars-slate/50 focus:border-ars-aqua focus:outline-none"></textarea>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">Web</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Next.js · React · Astro · Tailwind · Vite · Cloudflare Pages</p>
+              </div>
+              <div class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">Data & auth</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Supabase · PostgreSQL · Airtable · Hasura · Clerk</p>
+              </div>
+              <div class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">Automation</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Make · n8n · Power Automate · Zapier · Custom Node.js</p>
+              </div>
+              <div class="rounded-3xl border border-brand-cloud bg-white p-5 shadow-card">
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-navy">Delivery</h3>
+                <p class="mt-2 text-sm text-brand-ink/70">Linear · Notion · Loom walkthroughs · GitHub Projects</p>
+              </div>
             </div>
-            <div class="md:col-span-2 flex items-center justify-between">
-              <div class="text-xs text-ars-slate/60">We respond within one business day. Your information remains confidential.</div>
-              <button type="submit" class="inline-flex items-center justify-center rounded-full bg-ars-aqua px-6 py-3 text-sm font-semibold text-ars-midnight transition hover:-translate-y-0.5 hover:shadow-lg">Book My Call</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-brand-cloud/70 bg-brand-snow py-16">
+        <div class="mx-auto max-w-4xl px-6 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-navy/80">Need a hand?</p>
+          <h2 class="mt-4 text-3xl font-semibold text-brand-ink sm:text-4xl">Let's build the next internal hero tool together</h2>
+          <p class="mt-3 text-base text-brand-ink/70">Whether it's a single training module or an enablement portal with automations, we scope it tightly and launch quickly so momentum never dips.</p>
+          <a href="#contact" class="mt-6 inline-flex items-center rounded-full bg-brand-navy px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-brand-sky">Talk through your idea</a>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-white py-20">
+        <div class="mx-auto max-w-5xl px-6">
+          <div class="grid gap-10 lg:grid-cols-[1fr,1.1fr] lg:items-start">
+            <div class="space-y-4">
+              <h2 class="text-3xl font-semibold text-brand-ink sm:text-4xl">Start the conversation</h2>
+              <p class="text-base text-brand-ink/70">Share a few notes about your training or enablement challenge. We reply within one business day with a Loom overview and suggested next steps.</p>
+              <div class="space-y-2 text-sm text-brand-ink/70">
+                <p><span class="font-semibold text-brand-navy">Email:</span> <a href="mailto:hello@americanriversolutions.com" class="text-brand-navy underline-offset-4 hover:underline">hello@americanriversolutions.com</a></p>
+                <p><span class="font-semibold text-brand-navy">Based in:</span> Sacramento, CA · Collaborating remotely across the U.S.</p>
+              </div>
             </div>
-          </form>
+            <form class="rounded-3xl border border-brand-cloud bg-brand-snow p-6 shadow-card" action="#" method="POST">
+              <!-- Update the action attribute with your preferred form handling service -->
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label class="flex flex-col gap-1 text-sm">
+                  <span class="font-medium text-brand-navy">Name</span>
+                  <input type="text" name="name" required class="rounded-xl border border-brand-cloud px-3 py-2 text-brand-ink shadow-sm focus:border-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-sky/40" />
+                </label>
+                <label class="flex flex-col gap-1 text-sm">
+                  <span class="font-medium text-brand-navy">Company</span>
+                  <input type="text" name="company" class="rounded-xl border border-brand-cloud px-3 py-2 text-brand-ink shadow-sm focus:border-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-sky/40" />
+                </label>
+              </div>
+              <label class="mt-4 flex flex-col gap-1 text-sm">
+                <span class="font-medium text-brand-navy">Email</span>
+                <input type="email" name="email" required class="rounded-xl border border-brand-cloud px-3 py-2 text-brand-ink shadow-sm focus:border-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-sky/40" />
+              </label>
+              <label class="mt-4 flex flex-col gap-1 text-sm">
+                <span class="font-medium text-brand-navy">How can we help?</span>
+                <textarea name="message" rows="4" required class="rounded-xl border border-brand-cloud px-3 py-2 text-brand-ink shadow-sm focus:border-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-sky/40"></textarea>
+              </label>
+              <fieldset class="mt-4 grid gap-3 text-sm">
+                <legend class="font-medium text-brand-navy">What type of project is this?</legend>
+                <label class="flex items-center gap-3">
+                  <input type="checkbox" name="project_type" value="Web app" class="h-4 w-4 rounded border-brand-cloud text-brand-navy focus:ring-brand-sky" />
+                  <span class="text-brand-ink/75">Web app or portal</span>
+                </label>
+                <label class="flex items-center gap-3">
+                  <input type="checkbox" name="project_type" value="Training" class="h-4 w-4 rounded border-brand-cloud text-brand-navy focus:ring-brand-sky" />
+                  <span class="text-brand-ink/75">Training or assessments</span>
+                </label>
+                <label class="flex items-center gap-3">
+                  <input type="checkbox" name="project_type" value="Automation" class="h-4 w-4 rounded border-brand-cloud text-brand-navy focus:ring-brand-sky" />
+                  <span class="text-brand-ink/75">Automation or integrations</span>
+                </label>
+              </fieldset>
+              <button type="submit" class="mt-6 inline-flex items-center justify-center rounded-full bg-brand-navy px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-brand-sky">Send message</button>
+              <p class="mt-3 text-xs text-brand-ink/60">Prefer a quick call? Include a few times that work for you and we will send a calendar invite.</p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="relative border-t border-white/10 bg-black/40">
-      <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 text-sm text-ars-slate/50 md:flex-row md:items-center md:justify-between">
-        <div>
-          <p class="font-semibold text-white">American River Solutions</p>
-          <p>© <span id="year"></span> American River Solutions. All rights reserved.</p>
+    <footer class="border-t border-brand-cloud/70 bg-white/95">
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-brand-ink/60 md:flex-row md:items-center md:justify-between">
+        <p class="font-medium text-brand-ink/70">© <span id="year"></span> American River Solutions. All rights reserved.</p>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <a href="mailto:hello@americanriversolutions.com" class="transition hover:text-brand-navy">Email</a>
+          <a href="https://www.linkedin.com/company/american-river-solutions" class="transition hover:text-brand-navy" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#contact" class="transition hover:text-brand-navy">Book a chat</a>
         </div>
-        <div class="flex gap-6">
-          <a href="#services" class="transition hover:text-ars-aqua">Services</a>
-          <a href="#process" class="transition hover:text-ars-aqua">Process</a>
-          <a href="#industries" class="transition hover:text-ars-aqua">Industries</a>
-          <a href="#contact" class="transition hover:text-ars-aqua">Contact</a>
-        </div>
-        <div class="text-xs text-ars-slate/60">Headquartered in Sacramento, partnering nationwide.</div>
       </div>
     </footer>
   </div>
+
   <script>
+    const navToggle = document.querySelector('[data-mobile-toggle]');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (navToggle && mobileNav) {
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+
     const yearEl = document.getElementById('year');
     if (yearEl) {
       yearEl.textContent = new Date().getFullYear();
-    }
-
-    const mobileToggle = document.querySelector('[data-mobile-toggle]');
-    const mobileNav = document.getElementById('mobile-nav');
-
-    if (mobileToggle && mobileNav) {
-      const dropdowns = Array.from(mobileNav.querySelectorAll('[data-mobile-dropdown]'));
-
-      const closeAllSubmenus = () => {
-        dropdowns.forEach((dropdown) => {
-          const submenu = dropdown.querySelector('[data-mobile-submenu]');
-          const toggle = dropdown.querySelector('[data-mobile-subtoggle]');
-          const icon = dropdown.querySelector('[data-mobile-subicon]');
-          if (submenu) {
-            submenu.classList.add('hidden');
-          }
-          if (toggle) {
-            toggle.setAttribute('aria-expanded', 'false');
-          }
-          if (icon) {
-            icon.classList.remove('rotate-180');
-          }
-        });
-      };
-
-      const setMenuState = (open) => {
-        mobileNav.classList.toggle('hidden', !open);
-        mobileToggle.setAttribute('aria-expanded', open.toString());
-        if (!open) {
-          closeAllSubmenus();
-        }
-      };
-
-      mobileToggle.addEventListener('click', () => {
-        const shouldOpen = mobileNav.classList.contains('hidden');
-        setMenuState(shouldOpen);
-      });
-
-      dropdowns.forEach((dropdown) => {
-        const toggle = dropdown.querySelector('[data-mobile-subtoggle]');
-        const submenu = dropdown.querySelector('[data-mobile-submenu]');
-        const icon = dropdown.querySelector('[data-mobile-subicon]');
-
-        if (!(toggle && submenu)) {
-          return;
-        }
-
-        toggle.addEventListener('click', () => {
-          const shouldOpen = submenu.classList.contains('hidden');
-
-          dropdowns.forEach((otherDropdown) => {
-            if (otherDropdown === dropdown) {
-              return;
-            }
-            const otherSubmenu = otherDropdown.querySelector('[data-mobile-submenu]');
-            const otherToggle = otherDropdown.querySelector('[data-mobile-subtoggle]');
-            const otherIcon = otherDropdown.querySelector('[data-mobile-subicon]');
-            if (otherSubmenu) {
-              otherSubmenu.classList.add('hidden');
-            }
-            if (otherToggle) {
-              otherToggle.setAttribute('aria-expanded', 'false');
-            }
-            if (otherIcon) {
-              otherIcon.classList.remove('rotate-180');
-            }
-          });
-
-          submenu.classList.toggle('hidden', !shouldOpen);
-          toggle.setAttribute('aria-expanded', shouldOpen.toString());
-          if (icon) {
-            icon.classList.toggle('rotate-180', shouldOpen);
-          }
-        });
-      });
-
-      mobileNav.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => {
-          setMenuState(false);
-        });
-      });
-
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && !mobileNav.classList.contains('hidden')) {
-          setMenuState(false);
-          mobileToggle.focus();
-        }
-      });
     }
   </script>
 </body>
